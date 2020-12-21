@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+ul.pokemon-info {
+    font-size: 20px;
+    margin: $normalPadding auto;
+    width: 95%;
+    padding: 1% 0 0;
+    border: double 4px $slategray;
+    background-color: $lemonchiffon;
+    border-radius: .5em;
+
+    & > li {
+        margin: 1% 5%;
+        padding: .3% 0 1%;
+        border-bottom: slategrey 1px solid;
+        list-style-type: none;
+
+        & > span, & > div > span {
+            color: $salmon;
+            margin-right: $normalPadding;
+        }
+    }
+
+    & > li:hover {
+        opacity: .7;
+    }
+
+    & a {
+        color: darkgray;
+        text-decoration: none;
+    }
+
+    & a:hover {
+        color: $darkgreen;
+    }
+
+    & h3 {
+        color: $sky;
+        margin: -1rem 0 -1.5rem;
+    }
+}

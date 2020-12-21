@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+
+.evolution-chain {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    & > ul {
+        font-size: 20px;
+        margin: $normalPadding auto;
+        width: 70%;
+        padding: 1% 0 0;
+
+        & > li {
+            margin: 1% 5%;
+            padding: .3% 0 1%;
+            border-bottom: $sky 1px solid;
+            list-style-type: none;
+    
+            & > span, & > div > span {
+                color: $salmon;
+                margin-right: $normalPadding;
+            }
+        }
+    }
+
+    & > img {
+        border-radius: 15px;
+        margin: 0 auto 2em;
+        width: 60%;
+    }
+}

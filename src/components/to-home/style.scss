@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+a.go-to {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 15%;
+    margin: $normalPadding 0 0 2.3%;
+    text-align: center;
+    line-height: normal;
+    color: $thirdColor;
+    font-size: 22px;
+    border-radius: 5px;
+    padding: ceil($normalPadding/3);
+
+    &:link, a:visited, a:focus {
+        background: $sky;
+    }
+
+    &:hover {
+        background-color: $warningColor;
+        color: $mainColor;
+    }
+
+    &:active {
+        transform: scale(.95);
+        transition: .1s;
+        background-color: $shadow;
+        color: $textColor;
+        border: 1px solid $dark;
+    }
+}

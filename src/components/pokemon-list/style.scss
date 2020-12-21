@@ -1,0 +1,40 @@
+@import "../../variables.scss";
+
+.pokemon-list {
+    margin: $normalPadding*6.5 0 0;
+    width: 50%;
+
+    & li {
+        list-style-type: none;
+    }
+}
+
+.pokemon-list-item {
+    display: flex;
+    justify-content: space-between;
+    margin: ceil($normalPadding*.66);
+    text-align: left;
+    padding: ceil($normalPadding*.66) $normalPadding;
+    box-shadow: 2px 2px 4px 0 $shadow;
+    border: 1px solid darken($mainColor, 20%);
+    border-radius: 3px;
+
+    & > span {
+        margin: auto 0;
+    }
+
+    & > img {
+        width: 3rem;
+        border-radius: 50%;
+    }
+
+    &:hover
+    {
+        background-color: rgba(183, 188, 194, .3);
+    }
+
+    &:active {
+        transform: scale(.95);
+        transition: .5s;
+    }
+}
